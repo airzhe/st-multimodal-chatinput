@@ -121,7 +121,7 @@ class MultimodalChatInput extends StreamlitComponentBase<State> {
             onChange={this.handleInputChange}
             onPaste={this.handlePaste}
             placeholder="Type a message..."
-            style={{ flexGrow: 1, padding: "8px", borderRadius: "8px", border: "1px solid gray", backgroundColor: "transparent", resize: "none", overflow: "auto", color: "white", ...(isdisabled ? this.disabledStyle : {}) }}
+            style={{ flexGrow: 1, padding: "8px", borderRadius: "8px", border: "1px solid gray", backgroundColor: "transparent", resize: "none", overflow: "auto", color: "#000", ...(isdisabled ? this.disabledStyle : {}) }}
             onKeyDown={e => {
               if (e.key === "Enter" && !e.shiftKey) {
                 // Only ENTER -> Emulate send button press
